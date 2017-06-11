@@ -1,49 +1,33 @@
 {
-  "name": "google-translate-api",
-  "version": "2.2.2",
-  "description": "A free and unlimited API for Google Translate",
-  "main": "index.js",
+  "name": "cloud-discord-bot",
+  "version": "1.0.0",
+  "description": "A simple bot for teaching purposes",
+  "main": "bot.js",
   "scripts": {
-    "test": "xo && nyc ava",
-    "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/matheuss/google-translate-api.git"
+    "url": "git+ssh://git@gitlab.com/pierrick.bignet/cloud-discord-bot.git"
   },
-  "keywords": [
-    "translate",
-    "translator",
-    "google",
-    "translate",
-    "api",
-    "free",
-    "language"
-  ],
-  "author": {
-    "name": "Matheus Fernandes",
-    "email": "npm@matheus.top",
-    "url": "http://matheus.top"
-  },
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matheuss/google-translate-api/issues"
+    "url": "https://gitlab.com/pierrick.bignet/cloud-discord-bot/issues"
   },
-  "homepage": "https://github.com/matheuss/google-translate-api#readme",
+  "homepage": "https://gitlab.com/pierrick.bignet/cloud-discord-bot#README",
   "dependencies": {
-    "configstore": "^2.0.0",
-    "google-translate-token": "latest",
-    "got": "^6.3.0",
-    "safe-eval": "^0.3.0"
+    "discord.js": "^11.1.0",
+    "node-rest-client-promise": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
-    "codecov": "^1.0.1",
-    "coveralls": "^2.11.11",
-    "nyc": "^7.0.0",
-    "xo": "^0.16.0"
-  },
-  "xo": {
-    "space": 4
+    "ava": "^0.19.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
