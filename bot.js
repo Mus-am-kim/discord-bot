@@ -15,7 +15,7 @@ client.on('message', msg => {
   // If message is hello, post hello too
   if (msg.content === 'yo') {
     //console.log(' yo ca va !')
-    msg.channel.send('bienvenue que desirez vous savoir')
+    msg.channel.sendMessage('bienvenue que desirez vous ?')
   }
   	  if (msg.content === 'Paris') {
 	    httpClient.getPromise('http://api.openweathermap.org/data/2.5/weather?q=Londre&APPID=b05787eda8d8f7967925692ea52134d2')
