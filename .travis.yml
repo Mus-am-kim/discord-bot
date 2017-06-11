@@ -7,3 +7,5 @@ script:
 deploy:
   provider: azure_web_apps
   verbose: true
+  loggingEnabled: true
+devErrorsEnabled: true
