@@ -21,7 +21,7 @@ client.on('message', msg => {
     .then((res) => {
       var tempKal = res.data.main.temp
       var tempCel = tempKal - 273.15
-      msg.channel.sendMessage('Il fait à PARIS: ' + tempC.toFixed(2) + ' °C')
+      msg.channel.sendMessage('Il fait à PARIS: ' + tempCel.toFixed(2) + ' °C')
     })
   }
 
