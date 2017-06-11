@@ -13,8 +13,8 @@ client.on('message', msg => {
   if (msg.channel.type !== 'dm' && (config.channel !== msg.channel.id || msg.author.id === client.user.id)) return
 
   // If message is hello, post hello too
-  if (msg.content === 'hello') {
-    console.log(' hello ca va !')
+  if (msg.content === 'yo') {
+    //console.log(' yo ca va !')
     msg.channel.send('bienvenue que desirez vous savoir')
   }
   	  if (msg.content === 'Paris') {
