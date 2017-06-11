@@ -14,7 +14,7 @@ client.on('message', msg => {
 
   // If message is hello, post hello too
   if (msg.content === 'hello') {
-    console.log(' ca va !')
+    console.log(' hello ca va !')
     msg.channel.send('bienvenue que desirez vous savoir')
   }
   	  if (msg.content === 'Paris') {
