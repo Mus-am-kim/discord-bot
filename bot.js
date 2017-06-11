@@ -13,10 +13,10 @@ client.on('message', msg => {
 
   // If message is hello, post hello too
   if (msg.content === 'hello') {
-    console.log(' VOILA !')
-    msg.channel.send('VOILA')
+    console.log(' hello!')
+    msg.channel.send('hello man')
   }
-    if (msg.content === 'temperature/paris') {
+    if (msg.content === 'Paris') {
     httpClient.getPromise('http://api.openweathermap.org/data/2.5/weather?q=Paris&APPID=b05787eda8d8f7967925692ea52134d2')
     .then((res) => {
       var tempKal = res.data.main.temp
