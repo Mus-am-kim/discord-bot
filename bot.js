@@ -17,7 +17,7 @@ client.on('message', msg => {
     console.log(' VOILA !')
     msg.channel.send('bienvenue que desirez vous savoir')
   }
-  	  if (msg.content === 'Paris/temps') {
+  	  if (msg.content === 'Paris') {
 	    httpClient.getPromise('http://api.openweathermap.org/data/2.5/weather?q=Londre&APPID=b05787eda8d8f7967925692ea52134d2')
 	    .then((res) => {
 	      var tempKal = res.data.main.temp
