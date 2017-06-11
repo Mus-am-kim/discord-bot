@@ -1,4 +1,6 @@
 const Discord = require('discord.js')
+const Discord = require('index.js')
+const Discord = require('languages.js')
 const config = require('./config.js')
 const client = new Discord.Client()
 var httpClient = require('node-rest-client-promise').Client()
