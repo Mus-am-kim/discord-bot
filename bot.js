@@ -16,6 +16,15 @@ client.on('message', msg => {
     console.log(' VOILA !')
     msg.channel.send('VOILA')
   }
+    if (msg.content === 'temperature/paris') {
+    httpClient.getPromise('http://api.openweathermap.org/data/2.5/weather?q=Paris&APPID=b05787eda8d8f7967925692ea52134d2')
+    .then((res) => {
+      var tempKal = res.data.main.temp
+      var tempCel = tempKal - 273.15
+      msg.channel.sendMessage('Il fait à PARIS: ' + tempC.toFixed(2) + ' °C')
+    })
+  }
+
 })
 
 client.login(config.token)
