@@ -17,13 +17,13 @@ client.on('message', msg => {
     console.log(' VOILA !')
     msg.channel.send('bienvenue que desirez vous savoir')
   }
-  	  if (msg.content === 'temperature/paris') {
+  	  if (msg.content === 'Paris/temps') {
 	    httpClient.getPromise('http://api.openweathermap.org/data/2.5/weather?q=Londre&APPID=b05787eda8d8f7967925692ea52134d2')
 	    .then((res) => {
-	      var tempKel = res.data.main.temp
-	      var tempCel = tempK - 273.15
+	      var tempKal = res.data.main.temp
+	      var tempCel = tempKal - 273.15
         
-	      msg.channel.sendMessage('la Température à Londre est : ' + tempCel.toFixed(2) + ' °C')
+	      msg.channel.sendMessage('la Température à Paris est : ' + tempCel.toFixed(2) + ' °C')
 	    })
 	  }
 
