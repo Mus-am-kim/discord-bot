@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const config = require('./config.js')
 const client = new Discord.Client()
+var httpClient = require('node-rest-client-promise').Client()
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`)
