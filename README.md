@@ -8,7 +8,7 @@ Amine BLALTI
 
 Abdelhakim Bougjdi
 
-Mustafa Masry
+Mustapha Masry
 
 
 
@@ -18,7 +18,7 @@ Commandes du bot :
 
 
 
-!youtube "recherche" suivie par cha pour channel, pla pour playlist et vid pour les vidéos.
+!youtube "recherche" suivie par cha pour channel, pla pour playlist et vid pour les vidÃ©os.
 
 
 
@@ -26,6 +26,6 @@ Commandes du bot :
 
 
 
-!weather "ville" pour la météo actuelle sur la ville de votre choix
+!weather "ville" pour la mÃ©tÃ©o actuelle sur la ville de votre choix
 
-!forecast "ville" pour les previsions météo sur 5 jours
+!forecast "ville" pour les previsions mÃ©tÃ©o sur 5 jours
