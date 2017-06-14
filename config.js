@@ -3,6 +3,6 @@ module.exports = {
   channel: 'channelid',
   youtubeKey: 'AIzaSyBuXYDRQ20gsN66_WMCTokknoxWHiTYJZQ',
   clientId: '8733502aab3844898b8056e4b70eec12',
-  clientSecret: 'c22df3375d8245b98d85239919bc362a',
+  clientSecret: 'c22df3375d8245b98d85239919bc362a'
 
 }
