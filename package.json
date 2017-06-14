@@ -2,7 +2,7 @@
   "name": "cloud-discord-bot",
   "version": "1.0.0",
   "description": "A simple bot for teaching purposes",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
     "start": "node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +18,19 @@
   },
   "homepage": "https://gitlab.com/pierrick.bignet/cloud-discord-bot#README",
   "dependencies": {
+    "async": "^2.4.1",
     "discord.js": "^11.1.0",
-    "node-rest-client-promise": "^2.0.0"
+    "eslint-config-standard": "^10.2.1",
+    "google-translate": "^2.0.5",
+    "node-rest-client-promise": "^2.0.0",
+    "nodemon": "^1.11.0",
+    "openweathermap": "^1.0.0",
+    "openweathermap-js": "^1.0.1",
+    "request": "^2.81.0",
+    "spotify": "^0.3.0",
+    "spotify-web-api-node": "^2.4.0",
+    "youtube-api": "^2.0.8",
+    "youtube-node": "^1.3.0"
   },
   "devDependencies": {
     "ava": "^0.19.1",
