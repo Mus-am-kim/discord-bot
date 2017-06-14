@@ -11,10 +11,9 @@ module.exports = {
       spotifyApi.clientCredentialsGrant()
 
       .then(function (data) {
-      
         spotifyApi.setAccessToken(data.body['access_token'])
 //
-         if (msg.content.endsWith('album')) {
+        if (msg.content.endsWith('album')) {
           var type = 0
         } else if (msg.content.endsWith('artiste')) {
           type = 1
@@ -24,26 +23,21 @@ module.exports = {
           type = 2
         }
 
-        
-        if (msg.content.endsWith('artiste') ) {
+        if (msg.content.endsWith('artiste')) {
           var a = (msg.content).length
           var b = a - 7
-          var asw = msg.content.substring(9, b) 
-        }
-       else if (msg.content.endsWith('musique') ) {
-          var a = (msg.content).length
-          var b = a - 7
-          var asw = msg.content.substring(9, b) 
-        }
-        else if (msg.content.endsWith('album') ) {
-          var a = (msg.content).length
-          var b = a - 5
-          var asw = msg.content.substring(9, b) 
-        }
-         else {
+          var asw = msg.content.substring(9, b)
+        } else if (msg.content.endsWith('musique')) {
+          a = (msg.content).length
+          b = a - 7
+          asw = msg.content.substring(9, b)
+        } else if (msg.content.endsWith('album')) {
+          a = (msg.content).length
+          b = a - 5
+          asw = msg.content.substring(9, b)
+        } else {
           asw = msg.content.substring(9)
         }
-
 
         if (type === 0) {
           // album
@@ -74,12 +68,12 @@ module.exports = {
           })
         }
         if (type === 2) {
-          //musiques
+          // musiques
           spotifyApi.searchTracks('Musiques:' + asw)
           .then(function (data) {
             msg.channel.send('Résultats de votre recherche de musique pour "' + asw + '"')
             if (data.body.tracks.items[0] === undefined) {
-              msg.channel.send("Une erreur a été rencontrée, veuillez rééssayer.")
+              msg.channel.send('Une erreur a été rencontrée, veuillez rééssayer.')
             } else {
               for (let i = 0; i < data.body.tracks.items.length && i < 3; i++) {
                 msg.channel.send('"' + data.body.tracks.items[i].name + '" de ' + data.body.tracks.items[i].artists[0].name + '\n' + data.body.tracks.items[i].external_urls.spotify)

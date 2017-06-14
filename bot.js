@@ -18,7 +18,6 @@ client.on('message', msg => {
   //  recherche spotify
   spotify.spotify(msg)
 
-  //  météo 
   weather.Now(msg)
   weather.Forecast(msg)
 })

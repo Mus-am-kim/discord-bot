@@ -39,7 +39,6 @@ module.exports = {
         if (error) {
           console.log(error)
         } else {
-          
           for (var i in result.items) {
             var item = result.items[i]
             msg.channel.send('\nTitle: ' + item.snippet.title)
